@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,900,900i" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet"> -->
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/lte-font.css" />
+<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+<link rel="stylesheet" href="assets/css/slick.css" />
+<link rel="stylesheet" href="assets/css/slick-theme.css" />
+<link rel="stylesheet" href="assets/css/cmst.css" />
+
+<style>
+
+
+.content-section{background:#fff;padding:15px 0;}
+.content-section:nth-child(2n){background: #dedede;}
+.content-section img{width: 100%;}
+.content-section img.btn-video{width:100%;cursor: pointer;}
+.btn{padding:10px 20px;font-size: 20px}
+
+h2.title{background: #B93C99;margin:0;padding:20px 0;line-height:60px;font-size:60px;color:#fff;text-align: center;}
+
+#app{background: #dedede;}
+#app img{max-width: 100%;margin: 60px 0;}
+#btn_topo{bottom: 15px; right:calc(50% - 20px);}
+#seguranca h3,#independencia_financeira h3{line-height: 48px;font-size: 45px;text-align: center;}
+#independencia_financeira img{width:100%;margin:0;}
+
+#btnShare{background: #4fce5d;border:none;margin: 0;padding:20px;float:right;font-size:20px;color:#fff;cursor: pointer;}
+#btnShare:hover{background: #435a64;}
+
+.mod-apoiadores{width: 100%;margin:0 0 20px 0;}
+.mod-apoiadores img{width:100%;margin:0 0 10px;}
+.mod-apoiadores h5{line-height:30px;margin:0 0 20px;text-align: center;}
+.btn-block{margin:0 0 15px;}
+
+.box{display: flex;}
+.box .conteudo{align-self: center;}
+
+#trampos{background: #B93C99;padding:30px 0;}
+#trampos h3{font-size: 45px;color:#fff;text-align: center;}
+#trampos p{color:#fff;text-align: center;}
+
+#modal-video .btn-close{background:none;border:none;margin:20px 0 0;line-height:20px;font-size:50px;color:#B93C99;cursor: pointer;}
+#modal-video iframe{width:100%;height:400px;}
+
+.videos div{margin:0 10px 10px;}
+.videos p{font-size: 12px;}
+
+#btn-app{background:#B93C99;padding:10px;color:#fff;position: fixed;right:0;bottom: 30px;z-index: 100;font-size: 12px;text-align: center;}
+
+
+@media (max-width: 768px) {
+#topo img{width:100%;height:inherit;margin:10px 0;}
+#btn_menu{background:none !important;margin:10px 0 0 0;float: right;}
+#btn_menu i{color:#B93C99 !important;}
+#app h2,#seguranca h2,#independencia_financeira h2{font-size:30pt;}
+#seguranca h3,#independencia_financeira h3{line-height: 24px;font-size: 24px;}
+#seguranca p,#independencia_financeira p{line-height: 24px;font-size: 14px;}
+#independencia_financeira img{margin:0 0 20px 0;}
+.mod-apoiadores img{width:80%;margin:0 10% 15px;}
+#menu_mobile{top:65px;}
+#modal-video iframe{width:100%;height:200px;}
+#modal-video .btn-close{margin:0;}
+
+}
+
+</style>
+
+<title>SOS Mulher</title>
+</head>
+<body>
+
+<section id="topo">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-9 col-md-3">
+        <img src="assets/images/logo_sos.png" alt="logo" class="btn_menu branco" data-url="banner_video">
+        <img src="assets/images/logo_sos.png" alt="logo" class="btn_menu normal" data-url="banner_video">
+      </div>
+      <div class="col-3 col-md-9">
+        <div id="btn_menu"><i class="fa fa-bars"></i></div>
+        <ul id="menu">
+          <li class="btn_menu" href="#seguranca" data-url="seguranca">Segurança</li>
+          <li class="btn_menu" href="#independencia_financeira" data-url="independencia_financeira">Independência Financeira</li>
+          <li class="btn_menu" href="#saude" data-url="saude">Saúde</li>
+        </ul>
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="menu_mobile">
+  <ul>
+    <li class="btn_menu" href="#seguranca" data-url="seguranca">Segurança</li>
+    <li class="btn_menu" href="#independencia_financeira" data-url="independencia_financeira">Independência Financeira</li>
+    <li class="btn_menu" href="#saude" data-url="saude">Saúde</li>
+  </ul>
+</div>
+
+<a href="https://play.google.com/store/apps/details?id=pmesp.appemer.mp.android.medidasprotetivas" target="_blank"><div id="btn-app">Baixe o App<br/> da Mulher</div></a>
+
+
+<div id="overbg"></div>
+
+
+
+<section id="banner_video">
+	<div class="over">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 col-sm-12">
+					<h1>Bem vinda Mulher,</h1>
+					<h2>este é o <u>seu</u> espaço.</h2>
+					<p>
+						Inspiração, apoio e informação para uma vida melhor!
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section id="app">
+  <h2 class="title">Aplicativo da Mulher</h2>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col text-center">
+            <a href="https://play.google.com/store/apps/details?id=pmesp.appemer.mp.android.medidasprotetivas" target="_blank">
+              <img src="assets/images/app_da_mulher.jpeg" alt="App Emergência – Medidas Protetivas" />
+            </a>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="content-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <h3>Segurança</h3>
+        <p>Especialistas em segurança dão dicas importantes, confira:</p>
+
+        
+        <h3>Videos</h3>
+          <div class="videos">
+            <div>
+              <img class="btn-video" data-titulo="Juíza Mylene Ramos Seidl fala sobre seus direitos" data-video="https://www.youtube.com/embed/4mSWejVjIng" src="assets/video/juiza-mylene-ramos01.jpg" alt="thumb" />
+              <p class="text-center">Juíza Mylene Ramos Seidl fala sobre seus direitos</p>
+            </div>
+             <div>
+              <img class="btn-video" data-titulo="Delegada Renata fala sobre violência" data-video="https://www.youtube.com/embed/C_CF0lb24B4" src="assets/video/delegada-renata01.jpg" alt="thumb" />
+              <p class="text-center">Delegada Renata fala sobre violência</p>
+            </div>
+            <div>
+              <img class="btn-video" data-titulo="Fabiola Sucasas - Lei Maria da Penha" data-video="https://www.youtube.com/embed/ISnx8va3GzU" src="assets/video/fabiola-sucasas01.jpg" alt="thumb" />
+              <p class="text-center">Fabiola Sucasas - Lei Maria da Penha</p>
+            </div>
+            
+          </div>
+            
+          </div>
+         
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section id="independencia_financeira">
+  <h2 class="title">Independência Financeira</h2>
+</section>
+
+<section id="trampos">
+  <div class="container-fluid" style="padding:20px 15px;">
+    <div class="row">
+      <div class="col-12">
+        <h3>Vagas no trampos.co</h3>
+        <p class="text-center">O <strong>trampos.co</strong> e a <strong>SOS Mulher</strong> se uniram para te ajudar na busca por uma oportunidade no mercado de trabalho.<br/> Pesquise no mural as ofertas disponíveis no momento.</p>
+        <p class="text-center"><a href="http://sosmulher.trampos.co/" class="btn btn-info btn-lg">Acesse Agora</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <img src="assets/embaixadoras/apoiadora_lilian_caires.jpg">
+      </div>
+      <div class="col-12 col-md-8">
+          <h3>Carreira com Lilian Caires</h3>
+          <p>
+
+          Você está desempregada e está com dificuldades para voltar ao mercado de trabalho? Foi promovida, recentemente, e não sabe como lidar com os novos desafios? Aquele seu chefe anda no seu pé? 
+Pois, seja bem-vinda ao SOS Mulher! Meu nome é Lilian Caires, sou fundadora da W Coaching, e aqui conversaremos sobre carreira e gestão de negócios. 
+</p><p>
+O mercado de trabalho pode ser bem desafiador quando não estamos preparadas para enfrentá-lo. E, se por uma razão maior, ficamos enfraquecidas, este pode ser um mundo bem cruel, especialmente para as mulheres. Portanto, fique ligada aqui para receber dicas e informações que te fortalecerão e te deixarão mais confiantes para tomarem o seu próximo passo profissional.
+</p>
+
+          </p>
+        <h3>Videos</h3>
+          <div class="videos">
+            <div>
+              <img class="btn-video" data-titulo="Lilian Caires" data-video="https://www.youtube.com/embed/RIF03zPt8yg" src="assets/video/lilian-caires01.jpg" alt="thumb" />
+              <p class="text-center">Lilian Caires para o SOS Mulher</p>
+            </div>
+            
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-8 order-2 order-md-1">
+        <h3>Finanças com Carol Sandler</h3>
+        <p>Para ser independente, é fundamental ter controle sobre a sua vida financeira. Afinal de contas, você só pode ser autônoma se consegue bancar as suas escolhas. Dinheiro é determinante para decisões importantes como sair de um emprego, pedir um aumento, montar um negócio ou deixar um relacionamento têm que ser olhadas.</p>
+
+        <p>Então está na hora de olhar para o seu dinheiro com cuidado e carinho. A educação financeira é uma ferramenta para ajudar você a tomar as melhores decisões com seu dinheiro.</p>
+        <h3>Videos</h3>
+          <div class="videos">
+            <div>
+              <img class="btn-video" data-titulo="Finanças com Carol Sandler" data-video="https://www.youtube.com/embed/VaghCGn2ACk" src="assets/video/carol-sandler01.jpg" alt="thumb" />
+              <p class="text-center">Finanças com Carol Sandler</p>
+            </div>
+            
+          </div>
+        
+      </div>
+      <div class="col-12 col-md-4 order-1 order-md-2">
+        <img src="assets/embaixadoras/carol_sandler.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <img src="assets/embaixadoras/ana_fontes.jpg">
+      </div>
+      <div class="col-12 col-md-8">
+          <h3>Ana Fontes</h3>
+          <p>
+
+          A independência financeira é um componente fundamental no combate a violência contra a mulher , a RME rede mulher empreendedora surgiu para apoiar mulheres no desenvolvimento de seus negócios através de conteúdo qualificado , mentoria de negócios , capacitação e acesso a mercado, garantindo as ferramentas necessárias para apoiar as mulheres através do empreendedorismo, ressalta Ana fontes fundadora da RME como é conhecida.
+          </p>
+        <h3>Videos</h3>
+          <div class="videos">
+            <div>
+              <img class="btn-video" data-titulo="Ana Fontes" data-video="https://www.youtube.com/embed/8D7JnzkxRh0" src="assets/video/ana-fontes01.jpg" alt="thumb" />
+              <p class="text-center">Ana Fontes para o SOS Mulher</p>
+            </div>
+            
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div class="col-12 col-md-8">
+          <h3>Mulheres do Brasil</h3>
+          <p>
+
+          Mulheres inspiradoras dão recados importantes para você, confira.
+          </p>
+        <h3>Videos</h3>
+          <div class="videos">
+            <div>
+              <img class="btn-video" data-titulo="Luiza Helena Trajano" data-video="https://www.youtube.com/embed/R1OBK2YxIPI" src="assets/video/luiza-helena-trajano01.jpg" alt="thumb" />
+              <p class="text-center">Luiza Helena Trajano - Denuncie a violência</p>
+            </div>
+            <div>
+              <img class="btn-video" data-titulo="Luiza Helena Trajano" data-video="https://www.youtube.com/embed/129a4sK08t0" src="assets/video/luiza-helena-trajano02.jpg" alt="thumb" />
+              <p class="text-center">Luiza Helena Trajano - Vamos meter a colher!</p>
+            </div>
+            
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-12 col-md-8 order-2 order-md-1">
+            <h3>Informática com Camila Achiutti</h3>
+            <p>Ninguém questiona os avanços da informática. O mundo nuncam ais será tão pouco digital quanto hoje. Ao mesmo tempo, todos se questionam qual o futuro do trabalho.</p>
+            <p>Questionamentos como: quais são as habilidades necessários para o século XXI? Empreendedorismo é uma opção? A informática vai roubar o meu emprego? Será que essa é uma boa ideia?</p>
+            <p>Suportar o avanço da população, principalmente feminina, que hoje é a parcela que será mais impactada pela automação e uso de novas tecnologias, nessa nova jornada de digitalização.</p>
+           <h3>Videos</h3>
+          <div class="videos">
+            <div>
+              <img class="btn-video" data-titulo="Camila Achiutti" data-video="https://www.youtube.com/embed/3BKnHsqTwHc" src="assets/video/camila-achiutti01.jpg" alt="thumb" />
+              <p class="text-center">Camila Achiutti para o SOS Mulher</p>
+            </div>
+            
+          </div>
+          </div>
+          <div class="col-12 col-md-4  order-1 order-md-2">
+            <img src="assets/embaixadoras/camila_achiutti.jpg">
+          </div>
+        </div>
+      </div>
+
+</section>
+
+<section class="content-section">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4">
+        <img src="assets/embaixadoras/rachel_polito.jpg">
+      </div>
+
+      <div class="col-12 col-md-8">
+          <h3>Rachel Polito</h3>
+          <p>Rachel Polito é especialista em comunicação e comportamento, e dará várias dicas importantes que vão impactar sua vida positivamente. Acompanhe!</p>
+
+          <h3>Videos</h3>
+          <div class="videos">
+            <div>
+              <img class="btn-video" data-titulo="Rachel Polito para o SOS Mulher" data-video="https://www.youtube.com/embed/j1blP8zXySE" src="assets/video/rachel_polito_1.jpg" alt="thumb" />
+              <p class="text-center">Rachel Polito para o SOS Mulher</p>
+            </div>
+            <div>
+              <img class="btn-video" data-titulo="Vamos aprender a elogiar..." height="88" data-video="https://www.youtube.com/embed/3NpWwXbQZbU" src="assets/video/rachel_polito_2.jpg" alt="thumb" />
+              <p class="text-center">Vamos aprender a elogiar...</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--
+<section id="trampos">
+
+</section>
+-->
+<section id="saude">
+  <h2 class="title">Saúde</h2>
+</section>
+
+<section class="content-section">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 order-2 order-md-1">
+          <h3>Psicologia Positiva com Flora Victoria</h3>
+          <p>Flora Victoria –Master Coach, é a única Mestre em Psicologia Positiva Aplicada do País. Formada pela Universidade da Pensilvânia é tida como embaixadora da ciência no Brasil pelo seu criador, Martin Seligman.</p>
+          <h3>Videos</h3>
+          <div class="videos">
+            <div>
+              <img class="btn-video" data-titulo="Pratique exercícios físicos" data-video="https://www.youtube.com/embed/tD8ZYZtFolc" src="assets/video/flora-victoria01.jpg" alt="thumb" />
+              <p class="text-center">Pratique exercícios físicos</p>
+            </div>
+            <div>
+              <img class="btn-video" data-titulo="Propósito" data-video="https://www.youtube.com/embed/EMB-_T8cWTQ" src="assets/video/flora-victoria02.jpg" alt="thumb" />
+              <p class="text-center">Propósito</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4  order-1 order-md-2">
+        <img src="assets/embaixadoras/flora.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="content-section">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4">
+        <img src="assets/embaixadoras/carla_goes.jpg">
+      </div>
+
+      <div class="col-12 col-md-8">
+          <h3>Dra. Carla Goes</h3>
+          <p>Este espaço é para você grávida, trabalhadora, empoderada, jovem, idosa, você mulher.</p>
+
+          <p>Os problemas de pele são os que mais afetam a auto estima da mulher e isso vai muito além da estética. O estresse, a má alimentação e a falta de cuidado são fatores que podem ser trabalhados para prevenção.</p>
+
+          <p>Nessa websérie trataremos de assuntos como a saúde da mulher, os potenciais problemas da gravidez, seja ela tardia ou não, prevenção e tratamento do câncer de pele e dicas sobre acompanhamento psicológico.</p>
+
+          <p>O tema traz tópicos como a prevenção de uma gravidez indesejada, os cuidados tomados neste período e como os postos de saúde podem ajudar a mulher em qualquer fase delicada da vida.</p>
+
+          <h3>Videos</h3>
+          <div class="videos">
+            <div>
+              <img class="btn-video" data-titulo="Dra. Carla Goes fala sobre gravidez" data-video="https://www.youtube.com/embed/-cOhhwPTmuY" src="assets/video/carla_goes_1.jpg" alt="thumb" />
+              <p class="text-center">Dra. Carla Goes fala sobre gravidez</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 order-2 order-md-1">
+          <h3>Dra. Carla Sarni</h3>
+          <p>Dra. Carla Sarni vai dar dicas para uma boa saúde bucal.</p>
+          <h3>Videos</h3>
+          <div class="videos">
+            <div>
+              <img class="btn-video" data-titulo="Dra. Carla Sarni fala sobre prevenção de cáries" data-video="https://www.youtube.com/embed/sDlLXn6mYAc" src="assets/video/carla_sarni_1.jpg" alt="thumb" />
+              <p class="text-center">Dra. Carla Sarni fala sobre prevenção de cáries</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4  order-1 order-md-2">
+        <img src="assets/embaixadoras/carla_sarni.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="apoiadores" class="content-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="text-center title">Apoiadores</h1>
+				<p class="text-center title">Estamos aqui para apoiar <b>você</b>.</p>
+        <div class="row justify-content-center">
+
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/fabi_saad.jpg" class="photo_circle">
+              <h5>Fabi Saad<br>(Coordenadora)</h5>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/luiza_trajano.jpg" class="photo_circle">
+              <h5>Luiza Helena Trajano<br>(Mulheres do Brasil)</h5>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/ana_fontes.jpg" class="photo_circle">
+              <h5>Ana Fontes<br>(Rede Mulher Empreendedora)</h5>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/anne_williams.jpg" class="photo_circle">
+              <h5>Anne Williams<br>(Educação)</h5>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/camila_achiutti.jpg" class="photo_circle">
+              <h5>Camila Achiutti<br>(Informática)</h5>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/carla_goes.jpg" class="photo_circle">
+              <h5>Dra. Carla Goes<br>(Gravidez e Saúde)</h5>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/carla_sarni.jpg" class="photo_circle">
+              <h5>Dra. Carla Sarni<br>(Saúde Bucal)</h5>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/carol_sandler.jpg" class="photo_circle">
+              <h5>Carol Sandler<br>(Finanças Femininas)</h5>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/fabiola_sucasas.jpg" class="photo_circle">
+              <h5>Fabiola Sucasas<br>(Promotora de Justiça)</h5>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/flora.jpg" class="photo_circle">
+              <h5>Flora Victoria<br>(Psicologia Positiva)</h5>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/gabi_mansur.jpg" class="photo_circle">
+              <h5>Gabi Mansur<br>(Promotora de Justiça)</h5>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/apoiadora_lilian_caires.jpg" class="photo_circle">
+              <h5>Lilian Caires<br>(Coach - Carreira)</h5>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/mylene_ramos_seidl.jpg" class="photo_circle">
+              <h5>Mylene Ramos Seidl<br>(Juíza do Trabalho)</h5>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="mod-apoiadores">
+              <img src="assets/embaixadoras/rachel_polito.jpg" class="photo_circle">
+              <h5>Rachel Polito<br>(Comunicação e Comportamento)</h5>
+            </div>
+          </div>
+        </div>
+
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</section>
+
+
+<section id="rodape" class="sec_padding" style="background-color:#ffffff">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ul>
+					<li><img src="assets/images/logo_sos.png" alt="logo"></li>
+					<div class="clearfix"></div>
+					<li style="color:black">&copy; SOS Mulher. Todos os direitos reservados.</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<div id="btn_topo"><i class="fas fa-angle-up"></i></div>
+</section>
+
+
+<div id="modal-video" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button class="btn-close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <a target="_blank" href="#">
+          <button id="btnShare" data-url="">Compartilhe <i class="fab fa-whatsapp"></i></button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<script src="assets/js/jquery.mask.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="assets/js/localization/messages_pt_BR.min.js"></script>
+<script src="assets/js/jquery.vide.min.js"></script>
+<!-- <script src="assets/js/masonry.pkgd.min.js"></script> -->
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/cmst.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
